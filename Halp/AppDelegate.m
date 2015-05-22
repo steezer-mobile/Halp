@@ -51,10 +51,11 @@
     if (hasEmergencyContact.count) {
         self.contact = hasEmergencyContact.firstObject;
     }
+        
+    NSString *sendTextMessageToContact = userInfo[@"sendTextMessageToContact"];
+    reply(@{@"sendTextMessageToContact":sendTextMessageToContact});
     
-    NSLog(@"userInfo: %@", userInfo);
-    
-    if ([userInfo[@"sendTextMessageToContact"] isEqualToString:@"YES"]) {
+    if ([sendTextMessageToContact isEqualToString:@"YES"]) {
         NSLog(@"Gotta send a text message to %@!", self.contact.contactName);
     }
     

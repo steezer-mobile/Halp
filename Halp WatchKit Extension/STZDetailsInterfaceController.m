@@ -30,15 +30,12 @@
     [super awakeWithContext:context];
     
     NSLog(@"%@ awakeWithContext", self);
-
     [self handleReceiverFromParentApp];
 }
 
 - (void)willActivate {
     [super willActivate];
     NSLog(@"%@ will activate", self);
-    
-    [self handleReceiverFromParentApp];
 }
 
 - (void)didDeactivate {
@@ -68,6 +65,9 @@
         
         if (!error) {
             [self sendNotificationToParentAppToContactYourEmergencyContact];
+            NSLog(@"replyInfo: %@", replyInfo);
+        } else {
+            NSLog(@"Error: %@", [error description]);
         }
     }];
 }
