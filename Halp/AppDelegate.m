@@ -41,7 +41,7 @@
     
     return YES;
 }
-
+     
 - (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply {
     
     // Get the default Realm
@@ -52,12 +52,12 @@
         self.contact = hasEmergencyContact.firstObject;
     }
         
-    NSString *sendTextMessageToContact = userInfo[@"sendTextMessageToContact"];
-    reply(@{@"sendTextMessageToContact":sendTextMessageToContact});
+    // NSString *sendTextMessageToContact = userInfo[@"sendTextMessageToContact"];
+    // reply(@{@"sendTextMessageToContact":sendTextMessageToContact});
     
-    if ([sendTextMessageToContact isEqualToString:@"YES"]) {
-        NSLog(@"Gotta send a text message to %@!", self.contact.contactName);
-    }
+    // if ([sendTextMessageToContact isEqualToString:@"YES"]) {
+    //    NSLog(@"Gotta send a text message to %@!", self.contact.contactName);
+    //}
     
     NSMutableDictionary *replyObject = [NSMutableDictionary new];
     replyObject[@"contactName"] = [NSKeyedArchiver archivedDataWithRootObject: self.contact.contactName];
@@ -68,5 +68,20 @@
 
     reply(replyObject);
 }
+
+/*
+
+ [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleWatchKitNotification:) name:@"kWatchKitNotification" object:nil];
+ 
+- (void) dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void) handleWatchKitNotification:(NSNotification*)notification {
+    NSDictionary *userInfo = notification.object[@"triggerEmergencyAlert"];
+    NSLog(@"userInfo: %@", userInfo);
+}
+ 
+*/
 
 @end

@@ -86,6 +86,10 @@
 
 - (void) sendNotificationToParentAppToContactYourEmergencyContact {
     NSLog(@"sendNotificationToParentAppToContactYourEmergencyContact");
+    
+    [WKInterfaceController openParentApplication:@{@"triggerEmergencyAlert": @"YES"} reply:^(NSDictionary *replyInfo, NSError *error) {
+        
+    }];
 }
 
 @end
