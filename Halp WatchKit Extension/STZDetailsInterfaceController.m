@@ -48,8 +48,8 @@
 
 - (void) handleReceiverFromParentApp {
     
-    NSString *latitudeString = [NSString stringWithFormat:@"%f", self.latitude];
-    NSDictionary *applicationData = [[NSDictionary alloc] initWithObjects:@[latitudeString] forKeys:@[@"latitude"]];
+    NSString *sendTextMessageToContact = @"YES";
+    NSDictionary *applicationData = @{@"sendTextMessageToContact" : sendTextMessageToContact};
     
     //Handle reciever in app delegate of parent app
     [WKInterfaceController openParentApplication:applicationData reply:^(NSDictionary *replyInfo, NSError *error) {

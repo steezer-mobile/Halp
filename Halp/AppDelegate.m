@@ -44,14 +44,18 @@
 
 - (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply {
     
-    NSLog(@"userInfo: %@", userInfo);
-    
     // Get the default Realm
     self.contact = [[EmergencyContact alloc] init];
     
     RLMResults *hasEmergencyContact = [EmergencyContact objectsWhere:@"id = 1"];
     if (hasEmergencyContact.count) {
         self.contact = hasEmergencyContact.firstObject;
+    }
+    
+    NSLog(@"userInfo: %@", userInfo);
+    
+    if ([userInfo[@"sendTextMessageToContact"] isEqualToString:@"YES"]) {
+        NSLog(@"Gotta send a text message to %@!", self.contact.contactName);
     }
     
     NSMutableDictionary *replyObject = [NSMutableDictionary new];
