@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A610F3891B0F920B00A9077A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A610F3881B0F920B00A9077A /* CoreLocation.framework */; };
+		A6E2D7131B0EDD3100EDA265 /* EmergencyContact.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E2D7121B0EDD3100EDA265 /* EmergencyContact.m */; };
+		A6E2D7171B0EE76300EDA265 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E2D7151B0EE73B00EDA265 /* libc++.dylib */; };
+		A6E2D7191B0EF3B500EDA265 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E2D7181B0EF3B500EDA265 /* MapKit.framework */; };
+		A6E8BE2C1B0EBEFF00F749C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8BE2B1B0EBEFF00F749C3 /* main.m */; };
+		A6E8BE2F1B0EBEFF00F749C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8BE2E1B0EBEFF00F749C3 /* AppDelegate.m */; };
+		A6E8BE321B0EBEFF00F749C3 /* STZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8BE311B0EBEFF00F749C3 /* STZHomeViewController.m */; };
+		A6E8BE351B0EBEFF00F749C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E8BE331B0EBEFF00F749C3 /* Main.storyboard */; };
+		A6E8BE371B0EBEFF00F749C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E8BE361B0EBEFF00F749C3 /* Images.xcassets */; };
+		A6E8BE3A1B0EBEFF00F749C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E8BE381B0EBEFF00F749C3 /* LaunchScreen.xib */; };
+		A6E8BE461B0EBEFF00F749C3 /* HalpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8BE451B0EBEFF00F749C3 /* HalpTests.m */; };
+		A6E8BE5A1B0EBF3700F749C3 /* STZHomeInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8BE591B0EBF3700F749C3 /* STZHomeInterfaceController.m */; };
+		A6E8BE5D1B0EBF3700F749C3 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8BE5C1B0EBF3700F749C3 /* NotificationController.m */; };
+		A6E8BE601B0EBF3700F749C3 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8BE5F1B0EBF3700F749C3 /* GlanceController.m */; };
+		A6E8BE621B0EBF3700F749C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E8BE611B0EBF3700F749C3 /* Images.xcassets */; };
+		A6E8BE661B0EBF3700F749C3 /* Halp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A6E8BE651B0EBF3700F749C3 /* Halp WatchKit App.app */; };
+		A6E8BE6E1B0EBF3700F749C3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E8BE6C1B0EBF3700F749C3 /* Interface.storyboard */; };
+		A6E8BE701B0EBF3700F749C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E8BE6F1B0EBF3700F749C3 /* Images.xcassets */; };
+		A6E8BE731B0EBF3700F749C3 /* Halp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A6E8BE531B0EBF3700F749C3 /* Halp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A6E8BE811B0EC4F100F749C3 /* STZDetailsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E8BE801B0EC4F100F749C3 /* STZDetailsInterfaceController.m */; };
+		A6E8BE831B0EDAF500F749C3 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E8BE821B0EDAF500F749C3 /* Realm.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6E8BE401B0EBEFF00F749C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E8BE1E1B0EBEFF00F749C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E8BE251B0EBEFF00F749C3;
+			remoteInfo = Halp;
+		};
+		A6E8BE671B0EBF3700F749C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E8BE1E1B0EBEFF00F749C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E8BE641B0EBF3700F749C3;
+			remoteInfo = "Halp WatchKit App";
+		};
+		A6E8BE711B0EBF3700F749C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E8BE1E1B0EBEFF00F749C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E8BE521B0EBF3700F749C3;
+			remoteInfo = "Halp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6E8BE7A1B0EBF3700F749C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A6E8BE731B0EBF3700F749C3 /* Halp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A610F3881B0F920B00A9077A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A6E2D7111B0EDD3100EDA265 /* EmergencyContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyContact.h; sourceTree = "<group>"; };
+		A6E2D7121B0EDD3100EDA265 /* EmergencyContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyContact.m; sourceTree = "<group>"; };
+		A6E2D7151B0EE73B00EDA265 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A6E2D7181B0EF3B500EDA265 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A6E8BE261B0EBEFF00F749C3 /* Halp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E8BE2A1B0EBEFF00F749C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E8BE2B1B0EBEFF00F749C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6E8BE2D1B0EBEFF00F749C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6E8BE2E1B0EBEFF00F749C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6E8BE301B0EBEFF00F749C3 /* STZHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STZHomeViewController.h; sourceTree = "<group>"; };
+		A6E8BE311B0EBEFF00F749C3 /* STZHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STZHomeViewController.m; sourceTree = "<group>"; };
+		A6E8BE341B0EBEFF00F749C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6E8BE361B0EBEFF00F749C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6E8BE391B0EBEFF00F749C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A6E8BE3F1B0EBEFF00F749C3 /* HalpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E8BE441B0EBEFF00F749C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E8BE451B0EBEFF00F749C3 /* HalpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalpTests.m; sourceTree = "<group>"; };
+		A6E8BE531B0EBF3700F749C3 /* Halp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Halp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E8BE561B0EBF3700F749C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E8BE571B0EBF3700F749C3 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A6E8BE581B0EBF3700F749C3 /* STZHomeInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STZHomeInterfaceController.h; sourceTree = "<group>"; };
+		A6E8BE591B0EBF3700F749C3 /* STZHomeInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STZHomeInterfaceController.m; sourceTree = "<group>"; };
+		A6E8BE5B1B0EBF3700F749C3 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		A6E8BE5C1B0EBF3700F749C3 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		A6E8BE5E1B0EBF3700F749C3 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		A6E8BE5F1B0EBF3700F749C3 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		A6E8BE611B0EBF3700F749C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6E8BE651B0EBF3700F749C3 /* Halp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Halp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E8BE6B1B0EBF3700F749C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E8BE6D1B0EBF3700F749C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A6E8BE6F1B0EBF3700F749C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6E8BE7F1B0EC4F100F749C3 /* STZDetailsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STZDetailsInterfaceController.h; sourceTree = "<group>"; };
+		A6E8BE801B0EC4F100F749C3 /* STZDetailsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STZDetailsInterfaceController.m; sourceTree = "<group>"; };
+		A6E8BE821B0EDAF500F749C3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Halp/Realm.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6E8BE231B0EBEFF00F749C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A610F3891B0F920B00A9077A /* CoreLocation.framework in Frameworks */,
+				A6E2D7191B0EF3B500EDA265 /* MapKit.framework in Frameworks */,
+				A6E2D7171B0EE76300EDA265 /* libc++.dylib in Frameworks */,
+				A6E8BE831B0EDAF500F749C3 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8BE3C1B0EBEFF00F749C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8BE501B0EBF3700F749C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6E8BE1D1B0EBEFF00F749C3 = {
+			isa = PBXGroup;
+			children = (
+				A610F3881B0F920B00A9077A /* CoreLocation.framework */,
+				A6E2D7181B0EF3B500EDA265 /* MapKit.framework */,
+				A6E2D7151B0EE73B00EDA265 /* libc++.dylib */,
+				A6E8BE821B0EDAF500F749C3 /* Realm.framework */,
+				A6E8BE281B0EBEFF00F749C3 /* Halp */,
+				A6E8BE421B0EBEFF00F749C3 /* HalpTests */,
+				A6E8BE541B0EBF3700F749C3 /* Halp WatchKit Extension */,
+				A6E8BE691B0EBF3700F749C3 /* Halp WatchKit App */,
+				A6E8BE271B0EBEFF00F749C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6E8BE271B0EBEFF00F749C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE261B0EBEFF00F749C3 /* Halp.app */,
+				A6E8BE3F1B0EBEFF00F749C3 /* HalpTests.xctest */,
+				A6E8BE531B0EBF3700F749C3 /* Halp WatchKit Extension.appex */,
+				A6E8BE651B0EBF3700F749C3 /* Halp WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6E8BE281B0EBEFF00F749C3 /* Halp */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE851B0EDBA000F749C3 /* Model */,
+				A6E8BE7E1B0EBFC200F749C3 /* View Controller */,
+				A6E8BE7C1B0EBF9500F749C3 /* Views */,
+				A6E8BE7B1B0EBF4800F749C3 /* App Delegate */,
+				A6E8BE7D1B0EBFA800F749C3 /* Resources */,
+				A6E8BE291B0EBEFF00F749C3 /* Supporting Files */,
+			);
+			path = Halp;
+			sourceTree = "<group>";
+		};
+		A6E8BE291B0EBEFF00F749C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE2A1B0EBEFF00F749C3 /* Info.plist */,
+				A6E8BE2B1B0EBEFF00F749C3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6E8BE421B0EBEFF00F749C3 /* HalpTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE451B0EBEFF00F749C3 /* HalpTests.m */,
+				A6E8BE431B0EBEFF00F749C3 /* Supporting Files */,
+			);
+			path = HalpTests;
+			sourceTree = "<group>";
+		};
+		A6E8BE431B0EBEFF00F749C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE441B0EBEFF00F749C3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6E8BE541B0EBF3700F749C3 /* Halp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE581B0EBF3700F749C3 /* STZHomeInterfaceController.h */,
+				A6E8BE591B0EBF3700F749C3 /* STZHomeInterfaceController.m */,
+				A6E8BE7F1B0EC4F100F749C3 /* STZDetailsInterfaceController.h */,
+				A6E8BE801B0EC4F100F749C3 /* STZDetailsInterfaceController.m */,
+				A6E8BE5B1B0EBF3700F749C3 /* NotificationController.h */,
+				A6E8BE5C1B0EBF3700F749C3 /* NotificationController.m */,
+				A6E8BE5E1B0EBF3700F749C3 /* GlanceController.h */,
+				A6E8BE5F1B0EBF3700F749C3 /* GlanceController.m */,
+				A6E8BE611B0EBF3700F749C3 /* Images.xcassets */,
+				A6E8BE551B0EBF3700F749C3 /* Supporting Files */,
+			);
+			path = "Halp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A6E8BE551B0EBF3700F749C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE561B0EBF3700F749C3 /* Info.plist */,
+				A6E8BE571B0EBF3700F749C3 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6E8BE691B0EBF3700F749C3 /* Halp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE6C1B0EBF3700F749C3 /* Interface.storyboard */,
+				A6E8BE6F1B0EBF3700F749C3 /* Images.xcassets */,
+				A6E8BE6A1B0EBF3700F749C3 /* Supporting Files */,
+			);
+			path = "Halp WatchKit App";
+			sourceTree = "<group>";
+		};
+		A6E8BE6A1B0EBF3700F749C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE6B1B0EBF3700F749C3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6E8BE7B1B0EBF4800F749C3 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE2D1B0EBEFF00F749C3 /* AppDelegate.h */,
+				A6E8BE2E1B0EBEFF00F749C3 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		A6E8BE7C1B0EBF9500F749C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE381B0EBEFF00F749C3 /* LaunchScreen.xib */,
+				A6E8BE331B0EBEFF00F749C3 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A6E8BE7D1B0EBFA800F749C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE361B0EBEFF00F749C3 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A6E8BE7E1B0EBFC200F749C3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE301B0EBEFF00F749C3 /* STZHomeViewController.h */,
+				A6E8BE311B0EBEFF00F749C3 /* STZHomeViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		A6E8BE851B0EDBA000F749C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6E2D7111B0EDD3100EDA265 /* EmergencyContact.h */,
+				A6E2D7121B0EDD3100EDA265 /* EmergencyContact.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6E8BE251B0EBEFF00F749C3 /* Halp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E8BE491B0EBEFF00F749C3 /* Build configuration list for PBXNativeTarget "Halp" */;
+			buildPhases = (
+				A6E8BE221B0EBEFF00F749C3 /* Sources */,
+				A6E8BE231B0EBEFF00F749C3 /* Frameworks */,
+				A6E8BE241B0EBEFF00F749C3 /* Resources */,
+				A6E8BE7A1B0EBF3700F749C3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E8BE721B0EBF3700F749C3 /* PBXTargetDependency */,
+			);
+			name = Halp;
+			productName = Halp;
+			productReference = A6E8BE261B0EBEFF00F749C3 /* Halp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6E8BE3E1B0EBEFF00F749C3 /* HalpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E8BE4C1B0EBEFF00F749C3 /* Build configuration list for PBXNativeTarget "HalpTests" */;
+			buildPhases = (
+				A6E8BE3B1B0EBEFF00F749C3 /* Sources */,
+				A6E8BE3C1B0EBEFF00F749C3 /* Frameworks */,
+				A6E8BE3D1B0EBEFF00F749C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E8BE411B0EBEFF00F749C3 /* PBXTargetDependency */,
+			);
+			name = HalpTests;
+			productName = HalpTests;
+			productReference = A6E8BE3F1B0EBEFF00F749C3 /* HalpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6E8BE521B0EBF3700F749C3 /* Halp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E8BE771B0EBF3700F749C3 /* Build configuration list for PBXNativeTarget "Halp WatchKit Extension" */;
+			buildPhases = (
+				A6E8BE4F1B0EBF3700F749C3 /* Sources */,
+				A6E8BE501B0EBF3700F749C3 /* Frameworks */,
+				A6E8BE511B0EBF3700F749C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E8BE681B0EBF3700F749C3 /* PBXTargetDependency */,
+			);
+			name = "Halp WatchKit Extension";
+			productName = "Halp WatchKit Extension";
+			productReference = A6E8BE531B0EBF3700F749C3 /* Halp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A6E8BE641B0EBF3700F749C3 /* Halp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E8BE741B0EBF3700F749C3 /* Build configuration list for PBXNativeTarget "Halp WatchKit App" */;
+			buildPhases = (
+				A6E8BE631B0EBF3700F749C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Halp WatchKit App";
+			productName = "Halp WatchKit App";
+			productReference = A6E8BE651B0EBF3700F749C3 /* Halp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6E8BE1E1B0EBEFF00F749C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Steezer Mobile";
+				TargetAttributes = {
+					A6E8BE251B0EBEFF00F749C3 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					A6E8BE3E1B0EBEFF00F749C3 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = A6E8BE251B0EBEFF00F749C3;
+					};
+					A6E8BE521B0EBF3700F749C3 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					A6E8BE641B0EBF3700F749C3 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = A6E8BE211B0EBEFF00F749C3 /* Build configuration list for PBXProject "Halp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6E8BE1D1B0EBEFF00F749C3;
+			productRefGroup = A6E8BE271B0EBEFF00F749C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6E8BE251B0EBEFF00F749C3 /* Halp */,
+				A6E8BE3E1B0EBEFF00F749C3 /* HalpTests */,
+				A6E8BE521B0EBF3700F749C3 /* Halp WatchKit Extension */,
+				A6E8BE641B0EBF3700F749C3 /* Halp WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6E8BE241B0EBEFF00F749C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8BE351B0EBEFF00F749C3 /* Main.storyboard in Resources */,
+				A6E8BE3A1B0EBEFF00F749C3 /* LaunchScreen.xib in Resources */,
+				A6E8BE371B0EBEFF00F749C3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8BE3D1B0EBEFF00F749C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8BE511B0EBF3700F749C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8BE621B0EBF3700F749C3 /* Images.xcassets in Resources */,
+				A6E8BE661B0EBF3700F749C3 /* Halp WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8BE631B0EBF3700F749C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8BE6E1B0EBF3700F749C3 /* Interface.storyboard in Resources */,
+				A6E8BE701B0EBF3700F749C3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6E8BE221B0EBEFF00F749C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E2D7131B0EDD3100EDA265 /* EmergencyContact.m in Sources */,
+				A6E8BE321B0EBEFF00F749C3 /* STZHomeViewController.m in Sources */,
+				A6E8BE2F1B0EBEFF00F749C3 /* AppDelegate.m in Sources */,
+				A6E8BE2C1B0EBEFF00F749C3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8BE3B1B0EBEFF00F749C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8BE461B0EBEFF00F749C3 /* HalpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8BE4F1B0EBF3700F749C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8BE5D1B0EBF3700F749C3 /* NotificationController.m in Sources */,
+				A6E8BE5A1B0EBF3700F749C3 /* STZHomeInterfaceController.m in Sources */,
+				A6E8BE811B0EC4F100F749C3 /* STZDetailsInterfaceController.m in Sources */,
+				A6E8BE601B0EBF3700F749C3 /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6E8BE411B0EBEFF00F749C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6E8BE251B0EBEFF00F749C3 /* Halp */;
+			targetProxy = A6E8BE401B0EBEFF00F749C3 /* PBXContainerItemProxy */;
+		};
+		A6E8BE681B0EBF3700F749C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6E8BE641B0EBF3700F749C3 /* Halp WatchKit App */;
+			targetProxy = A6E8BE671B0EBF3700F749C3 /* PBXContainerItemProxy */;
+		};
+		A6E8BE721B0EBF3700F749C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6E8BE521B0EBF3700F749C3 /* Halp WatchKit Extension */;
+			targetProxy = A6E8BE711B0EBF3700F749C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6E8BE331B0EBEFF00F749C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6E8BE341B0EBEFF00F749C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6E8BE381B0EBEFF00F749C3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6E8BE391B0EBEFF00F749C3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A6E8BE6C1B0EBF3700F749C3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6E8BE6D1B0EBF3700F749C3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6E8BE471B0EBEFF00F749C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6E8BE481B0EBEFF00F749C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6E8BE4A1B0EBEFF00F749C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Halp",
+				);
+				INFOPLIST_FILE = Halp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6E8BE4B1B0EBEFF00F749C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Halp",
+				);
+				INFOPLIST_FILE = Halp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A6E8BE4D1B0EBEFF00F749C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HalpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Halp.app/Halp";
+			};
+			name = Debug;
+		};
+		A6E8BE4E1B0EBEFF00F749C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HalpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Halp.app/Halp";
+			};
+			name = Release;
+		};
+		A6E8BE751B0EBF3700F749C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Halp_WatchKit_Extension;
+				INFOPLIST_FILE = "Halp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A6E8BE761B0EBF3700F749C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Halp_WatchKit_Extension;
+				INFOPLIST_FILE = "Halp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A6E8BE781B0EBF3700F749C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Halp",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Halp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A6E8BE791B0EBF3700F749C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Halp",
+				);
+				INFOPLIST_FILE = "Halp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6E8BE211B0EBEFF00F749C3 /* Build configuration list for PBXProject "Halp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E8BE471B0EBEFF00F749C3 /* Debug */,
+				A6E8BE481B0EBEFF00F749C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E8BE491B0EBEFF00F749C3 /* Build configuration list for PBXNativeTarget "Halp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E8BE4A1B0EBEFF00F749C3 /* Debug */,
+				A6E8BE4B1B0EBEFF00F749C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E8BE4C1B0EBEFF00F749C3 /* Build configuration list for PBXNativeTarget "HalpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E8BE4D1B0EBEFF00F749C3 /* Debug */,
+				A6E8BE4E1B0EBEFF00F749C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E8BE741B0EBF3700F749C3 /* Build configuration list for PBXNativeTarget "Halp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E8BE751B0EBF3700F749C3 /* Debug */,
+				A6E8BE761B0EBF3700F749C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E8BE771B0EBF3700F749C3 /* Build configuration list for PBXNativeTarget "Halp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E8BE781B0EBF3700F749C3 /* Debug */,
+				A6E8BE791B0EBF3700F749C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6E8BE1E1B0EBEFF00F749C3 /* Project object */;
+}
