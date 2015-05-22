@@ -44,14 +44,7 @@
 
 - (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply {
     
-    /*
-    NSString *latitude = [userInfo objectForKey:@"latitude"];
-    NSString *longitude = [userInfo objectForKey:@"longitude"];
-    NSString *phoneNumber = [userInfo objectForKey:@"phoneNumber"];
-    NSString *contactName = [userInfo objectForKey:@"contactName"];
-    NSDictionary *replyDict = @{@"response": @"response", @"latitude": latitude, @"longitude": longitude, @"phoneNumber": phoneNumber, @"contactName": contactName};
-    
-    reply(replyDict); */
+    NSLog(@"userInfo: %@", userInfo);
     
     // Get the default Realm
     self.contact = [[EmergencyContact alloc] init];

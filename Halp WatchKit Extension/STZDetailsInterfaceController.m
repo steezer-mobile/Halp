@@ -35,7 +35,6 @@
 }
 
 - (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
     [super willActivate];
     NSLog(@"%@ will activate", self);
     
@@ -43,7 +42,6 @@
 }
 
 - (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
     [super didDeactivate];
     NSLog(@"%@ did deactivate", self);
 }
@@ -67,23 +65,27 @@
         NSData *longitudeData = replyInfo[@"longitude"];
         self.longitude = [[NSKeyedUnarchiver unarchiveObjectWithData: longitudeData] floatValue];
         [self setupInterfaceMap];
+        
+        if (!error) {
+            [self sendNotificationToParentAppToContactYourEmergencyContact];
+        }
     }];
 }
 
 - (void) setupInterfaceMap {
-    // Determine a location to display - Apple headquarters
-    // TODO: Grab coordinates from data source
     CLLocationCoordinate2D mapLocation = CLLocationCoordinate2DMake(self.latitude, self.longitude);
-    
     MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(1, 1);
     
-    // Other colors include red and green pins
     [self.alertMap addAnnotation:mapLocation withPinColor: WKInterfaceMapPinColorPurple];
     [self.alertMap setRegion:(MKCoordinateRegionMake(mapLocation, coordinateSpan))];
 }
 
 - (void) setupInterfaceLabel {
     [self.alertSentToLabel setText:[NSString stringWithFormat:@"Alert sent to %@ at %@.", self.contactName, self.phoneNumber]];
+}
+
+- (void) sendNotificationToParentAppToContactYourEmergencyContact {
+    NSLog(@"sendNotificationToParentAppToContactYourEmergencyContact");
 }
 
 @end
