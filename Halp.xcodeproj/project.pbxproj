@@ -103,7 +103,7 @@
 		A6E8BE6F1B0EBF3700F749C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A6E8BE7F1B0EC4F100F749C3 /* STZDetailsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STZDetailsInterfaceController.h; sourceTree = "<group>"; };
 		A6E8BE801B0EC4F100F749C3 /* STZDetailsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STZDetailsInterfaceController.m; sourceTree = "<group>"; };
-		A6E8BE821B0EDAF500F749C3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Halp/Realm.framework; sourceTree = "<group>"; };
+		A6E8BE821B0EDAF500F749C3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,13 +135,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A6E8BE1D1B0EBEFF00F749C3 = {
+		A610F38A1B0FBF1A00A9077A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A610F3881B0F920B00A9077A /* CoreLocation.framework */,
 				A6E2D7181B0EF3B500EDA265 /* MapKit.framework */,
-				A6E2D7151B0EE73B00EDA265 /* libc++.dylib */,
 				A6E8BE821B0EDAF500F749C3 /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A610F38B1B0FBF2300A9077A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A6E2D7151B0EE73B00EDA265 /* libc++.dylib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		A610F38C1B0FBF2800A9077A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8BE361B0EBEFF00F749C3 /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		A6E8BE1D1B0EBEFF00F749C3 = {
+			isa = PBXGroup;
+			children = (
 				A6E8BE281B0EBEFF00F749C3 /* Halp */,
 				A6E8BE421B0EBEFF00F749C3 /* HalpTests */,
 				A6E8BE541B0EBF3700F749C3 /* Halp WatchKit Extension */,
@@ -164,10 +186,10 @@
 		A6E8BE281B0EBEFF00F749C3 /* Halp */ = {
 			isa = PBXGroup;
 			children = (
+				A6E8BE7B1B0EBF4800F749C3 /* App Delegate */,
 				A6E8BE851B0EDBA000F749C3 /* Model */,
 				A6E8BE7E1B0EBFC200F749C3 /* View Controller */,
 				A6E8BE7C1B0EBF9500F749C3 /* Views */,
-				A6E8BE7B1B0EBF4800F749C3 /* App Delegate */,
 				A6E8BE7D1B0EBFA800F749C3 /* Resources */,
 				A6E8BE291B0EBEFF00F749C3 /* Supporting Files */,
 			);
@@ -265,7 +287,9 @@
 		A6E8BE7D1B0EBFA800F749C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A6E8BE361B0EBEFF00F749C3 /* Images.xcassets */,
+				A610F38C1B0FBF2800A9077A /* Assets */,
+				A610F38B1B0FBF2300A9077A /* Libraries */,
+				A610F38A1B0FBF1A00A9077A /* Frameworks */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
