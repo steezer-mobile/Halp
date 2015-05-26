@@ -69,19 +69,4 @@
     reply(replyObject);
 }
 
-/*
-
- [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleWatchKitNotification:) name:@"kWatchKitNotification" object:nil];
- 
-- (void) dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (void) handleWatchKitNotification:(NSNotification*)notification {
-    NSDictionary *userInfo = notification.object[@"triggerEmergencyAlert"];
-    NSLog(@"userInfo: %@", userInfo);
-}
- 
-*/
-
 @end
